@@ -1,13 +1,13 @@
 "use client";
 
-import Image from "next/image";
 import ItemCard from "../components/ItemCard";
 import { useState, useEffect } from "react";
 import { supabase } from "../utils/supabaseClient";
+import type { ItemCardProps } from "../components/ItemCard";
 
 export default function Home() {
   const [search, setSearch] = useState("");
-  const [itemData, setItemData] = useState([]);
+  const [itemData, setItemData] = useState<ItemCardProps[]>([]);
   const [loading, setLoading] = useState(true);
 
 useEffect(() => {

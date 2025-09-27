@@ -1,7 +1,7 @@
 import React from "react";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-interface ItemCardProps {
+export interface ItemCardProps {
   item: string;
   item_rating: number;
   place: string;
